@@ -1,0 +1,118 @@
+<style>
+    .left-navigation {
+      background-color: darkblue;
+      color: white;
+      width: 250px;
+      height: 1000px;
+      position: fixed;
+      padding: 20px;
+    }
+  
+    .left-navigation  {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .left-navigation {
+      margin-bottom: 10px;
+    }
+  
+    .left-navigation  a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      margin-top: 20px;
+      display: block;
+      transition: 0.3s;
+      padding: 8px 8px 8px 32px;
+    }
+    .left-navigation a:hover{
+        background-color: rgb(94, 184, 43);
+        color: red;
+        font-size: 25px;
+       
+    }
+  
+    .top-picture {
+      /* display: block; */
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-top: 20px;
+      margin-left: 10px;
+      box-shadow: rgb(238, 225, 225);
+    }
+  
+    .right-navigation {
+      /* float: right; */
+      background-color: rgb(54, 48, 48);
+      color: white;
+      margin-left: 250px;
+      padding: 20px;
+      position: fixed;
+      width: 250%;
+    }
+  
+    .search-box {
+      width: 200px;
+      padding: 5px;
+      margin-left: 1000px;
+    }
+  
+    .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(187, 179, 179);
+    min-width: 200px;
+    z-index: 1;
+    color: rgb(7, 7, 7);
+    padding: 10px;
+    width: 50%;
+    height: 500px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+</style>
+
+
+
+  
+  <div class="left-navigation">
+    <img src="../../assets/logo2.png" alt="" class="top-picture"><hr>
+   
+      
+      <a routerLink="/booking">Book Room</a>
+      <a href="#">Change Booking</a>
+      <a href="#">View Booking</a>
+      <a href="#">Room information</a>
+     <a href="#">Admin Information</a>
+     <a href="">Logout</a><br>
+    
+  </div>
+  
+  <div class="right-navigation">
+    <input type="text" placeholder="Search" class="search-box">
+    
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+             <li><a href="#">Menu1</a></li> <br><br>
+             <li><a href="#">Menu2</a></li> <br><br>
+             <li><a href="#">Menu3</a></li> <br><br>
+             <li><a href="#">Menu2</a></li> <br><br>
+             <li><a href="#">Menu3</a></li> 
+            </div>
+          </div>
+          
+        <router-outlet></router-outlet>
+          
+  
+  

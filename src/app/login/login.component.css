@@ -1,0 +1,32 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    margin: 20px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+
+
+  }
+  #button{
+    font-size: 40px;
+    margin: 20px 20px;
+  }
+  h1{
+    color: rgb(112, 10, 58);
+    margin: 80px 100px;
+    text-align: center;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    /* font-style: oblique; */
+  }
+  .logo{
+    position:relative;
+    margin-left: 700px;
+  }
